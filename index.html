@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsividade</title>
+
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/paisagem.css" media="screen and (orientation: landscape)"> 
+    <link rel="stylesheet" href="styles/retrato.css" media="screen and (orientation: portrait)">
+</head>
+<body>
+    <div id="page">
+        <nav>
+            <img src="images/menuIcon.svg" alt="" id="menuicon" onclick="mostrar()">
+            <ul id="menuopcoes">
+                <li>opcao</li>
+                <li>opcao</li>
+                <li>opcao</li>
+                <li>opcao</li>
+            </ul>
+        </nav>
+<!-- main -->
+        <div id="post">
+            <picture>
+                <source  media="(max-width: 730px)" srcset="images/mulherdancandoMenor.jpg">
+               <img src="images/mulherdancando.jpg" alt="" class="foto">
+                
+            </picture>
+         
+        <h1>Uma dança na Água</h1>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus nobis soluta fugit, officiis voluptatibus maiores cupiditate ut deserunt consequuntur cumque ex, ullam rerum alias adipisci earum architecto. Labore, tenetur aut!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut facilis asperiores veritatis. Illum ullam optio eaque, dolorum accusantium cumque beatae dolorem. Deleniti neque praesentium tempora vel labore libero ex! Maxime?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt fuga illo reprehenderit dignissimos quis impedit iure similique, necessitatibus animi soluta molestias est vitae quod odit quisquam recusandae tenetur, blanditiis maxime.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem pariatur nam sit eligendi? Ea, provident deleniti ducimus placeat soluta sint! Vel et autem officiis asperiores aliquid, provident molestias velit quas.</p>
+    </div>
+</div>
+<script>
+    function mostrar (){
+        if(menuopcoes.style.display == "none"){
+            menuopcoes.style.display = "block"}
+            else{
+                menuopcoes.style.display = "none"
+            }
+    }
+</script>
+    
+</body>
+</html>
